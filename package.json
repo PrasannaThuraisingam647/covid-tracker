@@ -7,8 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@popperjs/core": "^2.9.3",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.1.0",
     "chart.js": "^3.5.0",
     "chartjs-chart-geo": "^3.5.0",
     "core-js": "^3.6.5",
@@ -16,7 +19,9 @@
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0"
+    "vue-chartjs": "^3.5.1",
+    "vue-router": "^4.0.0-0",
+    "vue3-chart-v2": "^0.8.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

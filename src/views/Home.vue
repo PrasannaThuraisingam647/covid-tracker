@@ -1,10 +1,14 @@
 <template>
   <main v-if="!loading">
+
     <DataTitle :text="title" :dataDate="dataDate" />
 
-    <DataBoxes :stats='stats' />
-
     <CountrySelect @get-country="getCountryData" :countries="countries"/>
+    <br>
+
+    <!-- <PieChart :chartdata ='stats' /> -->
+
+    <DataBoxes :stats='stats' />
 
     <button @click="clearCountryData"
       v-if="stats.Country"
@@ -26,6 +30,7 @@
 import DataTitle from '@/components/DataTitle'
 import DataBoxes from '@/components/DataBoxes'
 import CountrySelect from '@/components/CountrySelect'
+// import PieChart from '@/components/PieChart'
 
 export default {
   name: 'Home',
